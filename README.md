@@ -12,7 +12,6 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-Canvas-ffd54a?style=for-the-badge&logo=javascript&logoColor=black)
 ![SDG 7](https://img.shields.io/badge/SDG-7_Clean_Energy-fcc30b?style=for-the-badge)
 
-**[🌻 Live Demo](YOUR-LIVE-LINK)** · **[🎬 Demo Video](YOUR-VIDEO-LINK)** · **[📖 About](#-about)**
 
 *Built for the Acodemic × KeebsforWater Global SDG Hackathon*
 
@@ -154,11 +153,6 @@ sparkstream/
 
 ---
 
-## 📸 Screenshots
-
-| The Village | Village Journal | Global Spark Map |
-|:---:|:---:|:---:|
-| <img src="screenshots/village.png" width="260"> | <img src="screenshots/journal.png" width="260"> | <img src="screenshots/map.png" width="260"> |
 
 ---
 
