@@ -4,8 +4,6 @@
 
 ### *Every stream a power source.*
 
-<img src="screenshots/hero.png" alt="SparkStream pixel village at sunset" width="720">
-
 <br>
 
 ![Python](https://img.shields.io/badge/Python-3.10+-9ccc65?style=for-the-badge&logo=python&logoColor=white)
@@ -204,6 +202,6 @@ Released under the MIT License. See `LICENSE` for details.
 
 *Because the water is already there.*
 
-**By [YOUR-NAME](https://github.com/YOUR-USERNAME)**
+**By Aania Sayida Mir **
 
 </div>
