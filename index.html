@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SparkStream: power a village with its own river</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head><body>
+<header class="sign">
+  <h1>SparkStream</h1>
+  <p>Every stream has a story. Find out how many homes, clinics and schools yours could light up.</p>
+</header>
+<main>
+  <section class="frame scene-wrap" aria-label="Your village">
+    <canvas id="scene" width="320" height="180"></canvas>
+    <div class="banner" id="banner">Move the sliders to wake the village</div>
+  </section>
+
+  <div class="two">
+    <section class="frame wood">
+      <h2>Your stream</h2>
+      <label>Water flow <b id="qv"></b> litres per second
+        <input id="flow" type="range" min="1" max="500" value="60"></label>
+      <label>Drop height <b id="hv"></b> metres
+        <input id="head" type="range" min="1" max="100" value="20"></label>
+      <details><summary>How do I measure this?</summary>
+        <p><b>Flow:</b> time how long a 20 L bucket takes to fill from the stream, then divide 20 by the seconds.<br>
+        <b>Height:</b> walk the stream downhill and add up the drops, or use a phone altimeter app at the top and bottom.</p></details>
+    </section>
+
+    <section class="frame paper">
+      <h2>Village journal</h2>
+      <div class="stats">
+        <div><span id="kw">0</span><small>kW of power</small></div>
+        <div><span id="homes">0</span><small>homes lit</small></div>
+        <div><span id="co2">0</span><small>tonnes CO₂ saved a year</small></div>
+      </div>
+      <ul id="loads" class="loads"></ul>
+      <p class="note" id="usd"></p>
+    </section>
+  </div>
+
+  <section class="frame paper">
+    <h2>Global Spark Map</h2>
+    <p>Click the map to place your stream, name your village, then plant your pin.</p>
+    <div id="map"></div>
+    <div class="plant">
+      <input id="vname" maxlength="40" placeholder="Village name">
+      <button id="plant" class="btn">Plant my pin</button>
+    </div>
+    <div class="world"><b id="wp">0</b> streams planned · <b id="wh">0</b> homes lit · <b id="wc">0</b> tonnes CO₂ saved a year</div>
+  </section>
+</main>
+<footer>Made for the Acodemic × KeebsforWater Global SDG Hackathon · SDG 7, 1, 3, 4, 13</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body></html>
